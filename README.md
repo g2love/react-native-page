@@ -1,7 +1,9 @@
 # react-native-page
 
-### 使用方法见index.ios.js文件，
-1、引入page.js文件
+### 使用方法见index.ios.js，
+* 引入page.js文件
+* 添加 <Page PageAlLNum={9} activePage={8} callBack={(CB)=>this.callBack(CB)}/>
+### demo
 ```
 import React, { Component } from 'react';
 import {
