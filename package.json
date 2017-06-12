@@ -13,12 +13,10 @@
   "author": "g2love",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/g2love/react-native-page/issues"
+    "url": "git://git@github.com:g2love/react-native-page/issues"
   },
   "keywords": [
     "react-native",
-    "center",
-    "component"
   ],
   "dependencies": {
   },
@@ -26,5 +24,4 @@
   "peerDependencies": {
     "react-native": ">=0.20.0"
   },
-  "homepage": "https://github.com/g2love/react-native-page#readme"
 }
