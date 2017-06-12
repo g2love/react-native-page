@@ -4,6 +4,7 @@
 * 引入page.js文件
 * 添加 <Page PageAlLNum={9} activePage={8} callBack={(CB)=>this.callBack(CB)}/>
 ### demo
+![](https://github.com/g2love/react-native-page/blob/master/demo.gif)
 ```
 import React, { Component } from 'react';
 import {
