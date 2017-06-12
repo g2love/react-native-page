@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/g2love/react-native-page.git"
+    "url": "git://git@github.com:g2love/react-native-page.git"
   },
   "author": "g2love",
   "license": "MIT",
