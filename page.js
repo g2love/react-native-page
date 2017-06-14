@@ -17,14 +17,14 @@ class Page extends Component {
   	constructor(props) {
 		super(props);
 		this.state = {
-			PageAlLNum:this.props.PageAlLNum,
+			PageAllNum:this.props.PageAllNum,
 			activePage:this.props.activePage,
 			prevDis:false,
 			nextDis:false,
 		};
   	}
   	componentWillMount() {
-		this.ChangeRusult(this.props.PageAlLNum,this.props.activePage);
+		this.ChangeRusult(this.props.PageAllNum,this.props.activePage);
   	}
   	ChangeRusult(PAN,AC){
 		var result=[];
@@ -73,18 +73,18 @@ class Page extends Component {
   	}
 
   	clickPage(data){
-		this.ChangeRusult(this.props.PageAlLNum,data);
+		this.ChangeRusult(this.props.PageAllNum,data);
   	}
   	prevPage(){
 		var _activePage=this.state.activePage;
 		if(_activePage>1){
-			this.ChangeRusult(this.props.PageAlLNum,_activePage-1);
+			this.ChangeRusult(this.props.PageAllNum,_activePage-1);
 		}
   	}
   	nextPage(){
 		var _activePage=this.state.activePage;
-		if(_activePage<this.state.PageAlLNum){
-			this.ChangeRusult(this.props.PageAlLNum,_activePage+1);
+		if(_activePage<this.state.PageAllNum){
+			this.ChangeRusult(this.props.PageAllNum,_activePage+1);
 		}
   	}
   	render() {

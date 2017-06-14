@@ -17,7 +17,7 @@ class PageIndex extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      PageAlLNum:9,//总页数
+      PageAllNum:9,//总页数
       activePage:8,//当前活动页码数
       current:8,//回调的当前页面数
     };
@@ -35,7 +35,7 @@ class PageIndex extends Component {
         <View style={styles.container}>
           <Text>{this.state.current}</Text>
         </View>
-        <Page PageAlLNum={9} activePage={8} callBack={(CB)=>this.callBack(CB)}/>
+        <Page PageAllNum={9} activePage={8} callBack={(CB)=>this.callBack(CB)}/>
       </View>
       
     )

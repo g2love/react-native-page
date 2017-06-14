@@ -2,7 +2,7 @@
 
 ### 使用方法见index.ios.js，
 * 引入page.js文件
-* 添加 <Page PageAlLNum={9} activePage={8} callBack={(CB)=>this.callBack(CB)}/>
+* 添加 <Page PageAllNum={9} activePage={8} callBack={(CB)=>this.callBack(CB)}/>
 ### demo
 ![](https://github.com/g2love/react-native-page/blob/master/demo.gif)
 ```
@@ -19,7 +19,7 @@ class PageIndex extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      PageAlLNum:9,//总页数
+      PageAllNum:9,//总页数
       activePage:8,//当前活动页码数
       current:8,//回调的当前页面数
     };
@@ -37,7 +37,7 @@ class PageIndex extends Component {
         <View style={styles.container}>
           <Text>{this.state.current}</Text>
         </View>
-        <Page PageAlLNum={9} activePage={8} callBack={(CB)=>this.callBack(CB)}/>
+        <Page PageAllNum={9} activePage={8} callBack={(CB)=>this.callBack(CB)}/>
       </View>
       
     )
