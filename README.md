@@ -1,6 +1,6 @@
 # react-native-page
 
-### 使用方法见index.ios.js，
+### 使用方法见index.js，
 * 引入page.js文件
 * 添加 <Page PageAllNum={9} activePage={8} callBack={(CB)=>this.callBack(CB)}/>
 ### demo
