@@ -28,6 +28,29 @@ class Page extends Component {
   	}
   	ChangeRusult(PAN,AC){
 		var result=[];
+		PAN=parseInt(PAN);
+		AC=parseInt(AC);
+
+		if(AC<=1){//禁用上一步
+			AC=1;
+			this.setState({
+				prevDis:true,
+			});
+		}else{
+			this.setState({
+				prevDis:false,
+			});
+		}
+		if(AC>=PAN){//禁用下一步
+			AC=PAN
+			this.setState({
+				nextDis:true,
+			});
+		}else{
+			this.setState({
+				nextDis:false,
+			});
+		}
 		if(PAN>5&&AC>2&&PAN-AC>=2){
 			result=[AC-2,AC-1,AC,AC+1,AC+2];
 		}else if(PAN>5&&AC<=2){
@@ -45,24 +68,6 @@ class Page extends Component {
 			arr:result,
 			activePage:AC,
 		});
-		if(AC==1){//禁用上一步
-			this.setState({
-				prevDis:true,
-			});
-		}else{
-			this.setState({
-				prevDis:false,
-			});
-		}
-		if(AC==PAN){//禁用下一步
-			this.setState({
-				nextDis:true,
-			});
-		}else{
-			this.setState({
-				nextDis:false,
-			});
-		}
 		this.props.callBack(AC);//向父组件回调传值
 		this.callBack(AC);//当前组件回调传值
   	}
