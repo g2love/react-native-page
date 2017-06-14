@@ -126,7 +126,7 @@ class Button extends Component{
 		
 	}
 }
-// /
+
 const styles = StyleSheet.create({
 	//父组件样式
 	container: {
